@@ -23,3 +23,17 @@ a {
     align-items: center;
     justify-content: center;
 }
+/* Select class */
+.custom-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;   
+}
+.custom-select select {
+    font-family: Arial;
+    min-width: 20%;
+    height: 2em;
+}
+/* END select class*/
