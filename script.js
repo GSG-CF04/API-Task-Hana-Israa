@@ -6,23 +6,23 @@ const content =document.querySelector(".flip-card");
 async function getData(){
 const response = await fetch(api)
 const data = await response.json();  
+
 printData(data); 
 }
 /* print data from API to list */
 function printData(data){
-
 select.innerHTML =`<select onchange="getSelectValue(this.value)"><option>Choose characters: </option>${data.map( character => `<option>${character.name}</option>`)}</select>`
-
 }
-getData()
+
+getData();
 
 /* Get data from list to show to card*/
 async function getSelectValue(character){
-// go here Israa
-    const response = await fetch(${api}?name=${character})
+
+    const response = await fetch(`${api}?name=${character}`)
     const data = await response.json()
 
-    content.innerHTML= <div class="flip-card-inner">
+    content.innerHTML= `<div class="flip-card-inner">
     <div class="flip-card-front">
         <img src="${data[0].img}" alt="char" style="width:350px;height:300px;">
     </div>
@@ -33,5 +33,5 @@ async function getSelectValue(character){
             <li>Birthday ${data[0].birthday}</li>
         </ul>
     </div>
-    </div>
+    </div>`
 }
