@@ -20,3 +20,20 @@ getData()
 async function getSelectValue(character){
 // go here Israa
 }
+async function getSelectValue(character){
+    const response = await fetch(${api}?name=${character})
+    const data = await response.json()
+
+    content.innerHTML= <div class="flip-card-inner">
+    <div class="flip-card-front">
+        <img src="${data[0].img}" alt="char" style="width:350px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+        <ul class="crad-li">
+            <li>Actor name ${data[0].name}</li>
+            <li>Nickname ${data[0].nickname}</li>
+            <li>Birthday ${data[0].birthday}</li>
+        </ul>
+    </div>
+    </div>
+}
