@@ -1,6 +1,6 @@
 const api ="https://www.breakingbadapi.com/api/characters";
 const select= document.querySelector(".custom-select");
-
+const content =document.querySelector(".flip-card");
 
 /* Get data from API */
 async function getData(){
@@ -19,8 +19,6 @@ getData()
 /* Get data from list to show to card*/
 async function getSelectValue(character){
 // go here Israa
-}
-async function getSelectValue(character){
     const response = await fetch(${api}?name=${character})
     const data = await response.json()
 
