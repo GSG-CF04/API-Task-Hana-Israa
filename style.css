@@ -33,7 +33,7 @@ a {
 }
 .custom-select select {
     font-family: Arial;
-    min-width: 20%;
+    min-width: 25%;
     height: 2em;
 }
 /* END select class*/
