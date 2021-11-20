@@ -85,4 +85,9 @@ a {
     color: white;
     transform: rotateY(180deg);
   }
+  .card-li {
+    list-style: none;
+    padding-bottom: 2em;
+    margin-top: 2em;
+  }
 /* End of card css*/
