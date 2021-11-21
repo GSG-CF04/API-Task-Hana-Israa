@@ -24,13 +24,13 @@ async function getSelectValue(character){
 
     content.innerHTML= `<div class="flip-card-inner">
     <div class="flip-card-front">
-        <img src="${data[0].img}" alt="char" style="width:350px;height:300px;">
+        <img src="${data[0].img}" alt="char" class="card-img">
     </div>
     <div class="flip-card-back">
-        <ul class="crad-li">
-            <li>Actor name ${data[0].name}</li>
-            <li>Nickname ${data[0].nickname}</li>
-            <li>Birthday ${data[0].birthday}</li>
+        <ul class="card-li">
+            <li>Actor-name:  ${data[0].name}</li>
+            <li>Nickname:  ${data[0].nickname}</li>
+            <li>Birthday:  ${data[0].birthday}</li>
         </ul>
     </div>
     </div>`
